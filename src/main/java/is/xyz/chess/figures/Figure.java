@@ -30,7 +30,7 @@ public abstract class Figure {
         return image;
     }
 
-    public void theMove(Tile tile){
+    public void move(Tile tile){
         if (tile.getFigure() != null) {
             kill(tile.getFigure());
         }
