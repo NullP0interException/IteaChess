@@ -17,7 +17,7 @@ public class Cemetery {
     }
 
     public boolean addFigure(Figure figure) {
-        return figure.isWhite ? whiteFigures.add(figure) : blackFigures.add(figure);
+        return figure.isWhite() ? whiteFigures.add(figure) : blackFigures.add(figure);
     }
 
     public ArrayList<Figure> getWhiteFigures() {

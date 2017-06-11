@@ -4,6 +4,12 @@
     -fx-font-size: 36px;
 }
 
+.node {
+    -fx-border-width: 5;
+    -fx-border-color: blanchedalmond;
+    -fx-border-style: solid;
+}
+
 .button, .label{
     -fx-text-fill: aquamarine;
 }
