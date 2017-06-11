@@ -1,19 +1,24 @@
-.root{
+.root {
     -fx-background-color: indigo;
     -fx-font-family: ARIAL;
+    -fx-font-size: 36px;
 }
-.logoLabel{
+
+.button, .label{
+    -fx-text-fill: aquamarine;
+}
+
+.logoLabel {
     -fx-text-fill: aquamarine;
     -fx-font-size: 96px;
     -fx-effect: dropshadow(gaussian, maroon, 5, 0.5, 5, 5);
 }
-.mainButton{
-    -fx-font-size: 36px;
+
+.mainButton {
     -fx-background-radius: 50;
-    -fx-text-fill: aquamarine;
     -fx-background-color: maroon;
 }
 
-.mainButton:hover{
+.mainButton:hover {
     -fx-background-color: #BB0000;
 }
