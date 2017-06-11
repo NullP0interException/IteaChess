@@ -1,5 +1,6 @@
 package is.xyz.ui.main;
 
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 
 /**
@@ -10,8 +11,8 @@ public class MainScene extends Scene {
     public static final int MAIN_SCENE_WIDTH = 1280;
     public static final int MAIN_SCENE_HEIGHT = 720;
 
-    public MainScene() {
-        super(new MainParent(), MAIN_SCENE_WIDTH, MAIN_SCENE_HEIGHT);
+    public MainScene(Parent root) {
+        super(root, MAIN_SCENE_WIDTH, MAIN_SCENE_HEIGHT);
         getStylesheets().add(getClass().getClassLoader().getResource("App.css").toExternalForm());
     }
 }

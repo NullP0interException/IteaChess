@@ -1,8 +1,11 @@
 package is.xyz;
 
+import is.xyz.ui.board.BoardParent;
+import is.xyz.ui.main.MainParent;
 import is.xyz.ui.main.MainScene;
 import javafx.application.Application;
 import javafx.scene.image.Image;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 
@@ -31,7 +34,7 @@ public class App extends Application {
 //            primaryStage.setWidth(newValue.doubleValue() * ASPECT_RATIO);
 //        });
 //        primaryStage.widthProperty().addListener((observable, oldValue, newValue) -> primaryStage.setHeight(newValue.doubleValue() / ASPECT_RATIO));
-        primaryStage.setScene(new MainScene());
+        primaryStage.setScene(new MainScene(new BoardParent()));
         primaryStage.show();
     }
 }
