@@ -9,7 +9,7 @@ public class BoardVBox extends VBox {
     public BoardVBox() {
         super(BoardParent.SPACING);
         getChildren().add(new CemeteryRow(null));
-        getChildren().add(new Board());
+        getChildren().add(new OuterBoard(new Board(false)));
         getChildren().add(new CemeteryRow(null));
     }
 }

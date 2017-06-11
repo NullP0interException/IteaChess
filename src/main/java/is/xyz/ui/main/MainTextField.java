@@ -12,9 +12,8 @@ public class MainTextField extends TextField {
 
     public MainTextField() {
         setPromptText("Enter ip");
-        setPrefSize(MenuVBox.PREF_WIDTH, MenuVBox.PREF_HEIGHT);
+        getStyleClass().add("mainTextField");
         setAlignment(Pos.CENTER);
-        setMaxWidth(MenuVBox.PREF_WIDTH);
         Platform.runLater(() -> getParent().requestFocus());
     }
 }

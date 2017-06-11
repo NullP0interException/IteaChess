@@ -34,7 +34,8 @@ public class App extends Application {
 //            primaryStage.setWidth(newValue.doubleValue() * ASPECT_RATIO);
 //        });
 //        primaryStage.widthProperty().addListener((observable, oldValue, newValue) -> primaryStage.setHeight(newValue.doubleValue() / ASPECT_RATIO));
-        primaryStage.setScene(new MainScene(new BoardParent()));
+        primaryStage.setScene(new MainScene(new MainParent()));
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 }

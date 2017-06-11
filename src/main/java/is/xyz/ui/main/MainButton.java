@@ -13,6 +13,5 @@ public class MainButton extends Button {
         super(text);
         setOnAction(eventHandler);
         getStyleClass().add("mainButton");
-        setPrefSize(MenuVBox.PREF_WIDTH, MenuVBox.PREF_HEIGHT);
     }
 }

@@ -4,13 +4,7 @@
     -fx-font-size: 36px;
 }
 
-.node {
-    -fx-border-width: 5;
-    -fx-border-color: blanchedalmond;
-    -fx-border-style: solid;
-}
-
-.button, .label{
+.button, .label {
     -fx-text-fill: aquamarine;
 }
 
@@ -31,4 +25,82 @@
 
 .errorText {
     -fx-prompt-text-fill: red;
+}
+
+.mainLabel, .mainButton, .mainTextField, .mainProgressIndicator {
+    -fx-pref-width: 500;
+    -fx-pref-height: 100;
+}
+
+.mainTextField {
+    -fx-max-width: 500;
+}
+
+.boardLabel, .tile {
+    -fx-pref-height: 72;
+    -fx-pref-width: 72;
+}
+
+.blackTile {
+    -fx-background-color: black;
+}
+
+.whiteTile {
+    -fx-background-color: white;
+}
+
+.whiteRook {
+    -fx-image: url("images/white_rook.png");
+}
+
+.whiteKnight {
+    -fx-image: url("images/white_knight.png");
+}
+
+.whitePawn {
+    -fx-image: url("images/white_pawn.png");
+}
+
+.whiteKing {
+    -fx-image: url("images/white_king.png");
+}
+
+.whiteBishop {
+    -fx-image: url("images/white_bishop.png");
+}
+
+.whiteQueen {
+    -fx-image: url("images/white_queen.png");
+}
+
+.blackRook {
+    -fx-image: url("images/black_rook.png");
+}
+
+.blackKnight {
+    -fx-image: url("images/black_knight.png");
+}
+
+.blackPawn {
+    -fx-image: url("images/black_pawn.png");
+}
+
+.blackKing {
+    -fx-image: url("images/black_king.png");
+}
+
+.blackBishop {
+    -fx-image: url("images/black_bishop.png");
+}
+
+.blackQueen {
+    -fx-image: url("images/black_queen.png");
+}
+
+.figure{
+    -fx-effect: dropshadow(gaussian, white, 2, 1.0, 0, 0);
+}
+
+.tile:hover .myFigure{
+    -fx-effect: dropshadow(gaussian, chartreuse, 4, 1.0, 0, 0);
 }

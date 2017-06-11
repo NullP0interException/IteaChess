@@ -11,8 +11,6 @@ import javafx.scene.layout.VBox;
 public class MenuVBox extends VBox {
 
     public static final int SPACING = 10;
-    public static final int PREF_WIDTH = 500;
-    public static final int PREF_HEIGHT = 100;
 
     public MenuVBox() {
         super(SPACING);

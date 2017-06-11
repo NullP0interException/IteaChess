@@ -1,6 +1,6 @@
-package is.xyz.chess.borad;
+package is.xyz.ui.board;
 
-import is.xyz.chess.figures.Figure;
+import is.xyz.ui.figures.Figure;
 
 import java.util.ArrayList;
 

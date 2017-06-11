@@ -1,34 +1,33 @@
-package is.xyz.chess.figures;
+package is.xyz.ui.figures;
 
-import is.xyz.chess.borad.Tile;
-import javafx.scene.image.Image;
+import is.xyz.ui.board.Tile;
+import javafx.scene.image.ImageView;
 
 /**
  * Created by atimohyn on 10.06.2017.
  */
-public abstract class Figure {
+public abstract class Figure extends ImageView{
     private boolean isWhite;
-    private Image image;
     private Tile tile;
 
-    public Figure(boolean isWhite, Image image, Tile tile) {
+    public Figure(boolean isWhite, Tile tile) {
         this.isWhite = isWhite;
-        this.image = image;
         this.tile = tile;
+        getStyleClass().add("figure");
+        if (tile.getBoard().isWhite() == isWhite){
+            getStyleClass().add("myFigure");
+        }
+        setFitHeight(60);
+        setFitWidth(60);
     }
 
     public Tile getTile() {
         return tile;
     }
-    public void setTile(Tile tile) {
-        this.tile = tile;
-    }
     public boolean isWhite() {
         return isWhite;
     }
-    public Image getImage() {
-        return image;
-    }
+
 
     public void move(Tile tile){
         if (tile.getFigure() != null) {

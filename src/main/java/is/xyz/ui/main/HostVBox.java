@@ -1,5 +1,7 @@
 package is.xyz.ui.main;
 
+import is.xyz.network.NetworkManager;
+
 import java.net.InetAddress;
 import java.net.NetworkInterface;
 import java.net.SocketException;
@@ -30,8 +32,13 @@ public class HostVBox extends MenuVBox {
         } catch (SocketException e) {
             e.printStackTrace();
         }
+        final NetworkManager networkManager = new NetworkManager();
+        networkManager.host();
         getChildren().add(new MainLabel("Your ip: " + ip));
         getChildren().add(new MainProgressIndicator());
-        getChildren().add(new MainButton("Cancel", event -> change(new MainVBox())));
+        getChildren().add(new MainButton("Cancel", event -> {
+            networkManager.stop();
+            change(new MainVBox());
+        }));
     }
 }

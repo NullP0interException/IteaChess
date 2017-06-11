@@ -14,7 +14,7 @@ public class MainProgressIndicator extends HBox {
     public MainProgressIndicator() {
         super(MenuVBox.SPACING);
         setAlignment(CENTER);
-        setPrefSize(MenuVBox.PREF_WIDTH, MenuVBox.PREF_HEIGHT);
+        getStyleClass().add("mainProgressIndicator");
         getChildren().addAll(new ProgressIndicator(), new Label("Waiting opponent..."));
     }
 }
