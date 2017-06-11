@@ -12,12 +12,12 @@ public class Cemetery {
     private ArrayList<Figure> blackFigures;
 
     public Cemetery() {
-        whiteFigures = new ArrayList<Figure>(16);
-        blackFigures = new ArrayList<Figure>(16);
+        whiteFigures = new ArrayList<>(16);
+        blackFigures = new ArrayList<>(16);
     }
 
     public boolean addFigure(Figure figure) {
-        return figure.isWhite ? whiteFigures.add(figure) : blackFigures.add(figure);
+        return figure.isWhite() ? whiteFigures.add(figure) : blackFigures.add(figure);
     }
 
     public ArrayList<Figure> getWhiteFigures() {

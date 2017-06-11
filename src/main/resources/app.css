@@ -22,3 +22,7 @@
 .mainButton:hover {
     -fx-background-color: #BB0000;
 }
+
+.errorText {
+    -fx-prompt-text-fill: red;
+}

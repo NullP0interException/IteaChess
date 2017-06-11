@@ -7,7 +7,7 @@ public class MainVBox extends MenuVBox {
 
     public MainVBox() {
         getChildren().add(new MainButton("Host", event -> change(new HostVBox())));
-        getChildren().add(new MainButton("Connect", null));
+        getChildren().add(new MainButton("Connect", event -> change(new ConnectVBox())));
         getChildren().add(new MainButton("Exit", event -> System.exit(0)));
     }
 }
