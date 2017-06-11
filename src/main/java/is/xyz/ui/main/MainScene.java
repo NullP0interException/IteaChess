@@ -1,6 +1,5 @@
-package is.xyz.ui;
+package is.xyz.ui.main;
 
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 
 /**

@@ -1,4 +1,4 @@
-package is.xyz.ui;
+package is.xyz.ui.main;
 
 import java.net.InetAddress;
 import java.net.NetworkInterface;

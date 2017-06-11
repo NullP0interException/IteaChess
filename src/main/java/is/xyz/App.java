@@ -1,12 +1,8 @@
 package is.xyz;
 
-import is.xyz.ui.MainScene;
+import is.xyz.ui.main.MainScene;
 import javafx.application.Application;
-import javafx.scene.Scene;
-import javafx.scene.control.Label;
 import javafx.scene.image.Image;
-import javafx.scene.layout.VBox;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 

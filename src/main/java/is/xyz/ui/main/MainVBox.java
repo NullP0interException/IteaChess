@@ -1,4 +1,4 @@
-package is.xyz.ui;
+package is.xyz.ui.main;
 
 /**
  * Created by Admin on 10.06.2017.
