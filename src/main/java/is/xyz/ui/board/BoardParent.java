@@ -1,5 +1,6 @@
 package is.xyz.ui.board;
 
+import is.xyz.network.NetworkManager;
 import javafx.scene.layout.HBox;
 
 /**
@@ -8,9 +9,9 @@ import javafx.scene.layout.HBox;
 public class BoardParent extends HBox {
     public static final int SPACING = 10;
 
-    public BoardParent() {
+    public BoardParent(NetworkManager networkManager) {
         super(SPACING);
-        getChildren().add(new BoardVBox());
-        getChildren().add(new ChatVBox());
+        getChildren().add(new BoardVBox(networkManager));
+        getChildren().add(new RightVBox(networkManager));
     }
 }

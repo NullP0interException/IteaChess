@@ -39,4 +39,8 @@ public class Tile extends BorderPane {
     public Board getBoard() {
         return board;
     }
+
+    public boolean canMoveTo() {
+        return (figure == null || !figure.isMy()) && !getBoard().isCheck(this);
+    }
 }

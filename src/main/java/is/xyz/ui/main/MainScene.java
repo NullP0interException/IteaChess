@@ -13,6 +13,7 @@ public class MainScene extends Scene {
 
     public MainScene(Parent root) {
         super(root, MAIN_SCENE_WIDTH, MAIN_SCENE_HEIGHT);
-        getStylesheets().add(getClass().getClassLoader().getResource("App.css").toExternalForm());
+//        getStylesheets().add(getClass().getClassLoader().getResource("App.css").toExternalForm());
+        getStylesheets().add("app.css");
     }
 }

@@ -9,8 +9,8 @@ public class OuterBoard extends BorderPane {
 
     public OuterBoard(Board board) {
         super(board);
-        setLeft(new NumberColumn(true));
-        setRight(new NumberColumn(true));
+        setLeft(new NumberColumn(board.isWhite()));
+        setRight(new NumberColumn(board.isWhite()));
         setTop(new LettersRow());
         setBottom(new LettersRow());
     }

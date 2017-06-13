@@ -14,12 +14,12 @@
     -fx-effect: dropshadow(gaussian, maroon, 5, 0.5, 5, 5);
 }
 
-.mainButton {
+.mainButton, .chatButton {
     -fx-background-radius: 50;
     -fx-background-color: maroon;
 }
 
-.mainButton:hover {
+.mainButton:hover, .chatButton:hover {
     -fx-background-color: #BB0000;
 }
 
@@ -97,10 +97,38 @@
     -fx-image: url("images/black_queen.png");
 }
 
-.figure{
+.figure {
     -fx-effect: dropshadow(gaussian, white, 2, 1.0, 0, 0);
 }
 
-.tile:hover .myFigure{
+.tile:hover .myFigure {
     -fx-effect: dropshadow(gaussian, chartreuse, 4, 1.0, 0, 0);
+}
+
+.move {
+    -fx-background-color: deepskyblue;
+}
+
+.attack {
+    -fx-background-color: #BB0000;
+}
+
+.moving .myFigure {
+    -fx-effect: dropshadow(gaussian, deepskyblue, 4, 1.0, 0, 0);
+}
+
+.move:hover, .attack:hover{
+    -fx-background-color: chartreuse;
+}
+
+.chat{
+    -fx-font-size: 20px;
+}
+
+.red{
+    -fx-text-fill: red;
+}
+
+.green{
+    -fx-text-fill: greenyellow;
 }

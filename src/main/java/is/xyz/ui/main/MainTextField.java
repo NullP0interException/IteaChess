@@ -11,6 +11,7 @@ import javafx.scene.control.TextField;
 public class MainTextField extends TextField {
 
     public MainTextField() {
+        super("127.0.0.1");
         setPromptText("Enter ip");
         getStyleClass().add("mainTextField");
         setAlignment(Pos.CENTER);
